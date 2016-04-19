@@ -1,0 +1,10 @@
+# inside /cache
+
+/headers
+{
+  "Content-Disposition"
+  "Content-Type"
+  "X-Content-Type-Options"
+  "Last-Modified"
+
+}

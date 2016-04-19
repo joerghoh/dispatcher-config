@@ -1,0 +1,37 @@
+
+# This is the farm configuration for geometrixx.com
+
+/farm_geometrixx_com
+{
+  $include "../clientheaders.any"
+
+  $include "../filter.any"
+
+  $include "../vanityurls.any"
+
+  /renders
+  { 
+    /render01 
+    {
+      /hostname "localhost"
+      /port "4503"
+    }
+  }
+
+  /cache
+  {
+    $include "../cache_rules.any"
+    $include "../cache_invalidate.any"
+
+    $include "../cache_headers.any"
+
+    /docroot "/Users/jhoh/tmp/dispcache/content/geometrixx/com"
+
+
+    /serveStaleOnError "1"
+
+  }
+
+
+
+}

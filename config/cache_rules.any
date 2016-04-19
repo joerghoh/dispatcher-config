@@ -1,0 +1,10 @@
+/rules
+
+{
+  /0000 { /glob "*.html" /type "allow" }
+  /0001 { /glob "*.jpg" /type "allow" }
+  /0002 { /glob "*.png" /type "allow" }
+  /0003 { /glob "*.css" /type "allow" }
+  /0004 { /glob "*.js" /type "allow" }
+
+}

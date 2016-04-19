@@ -1,0 +1,8 @@
+# start of the dispatcher configuration
+
+/name "dispatcher"
+
+/farms
+  {
+    $include "farms/farm_*.any"
+  }
