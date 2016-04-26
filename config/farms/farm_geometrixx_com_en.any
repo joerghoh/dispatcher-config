@@ -4,17 +4,19 @@
 /farm_geometrixx_com
 {
   $include "../clientheaders.any"
-
   $include "../filter.any"
 
-  $include "../vanityurls.any"
+  /virtualhosts
+  {
+    "geometrixx.com"
+  }
 
   /renders
   { 
     /render01 
     {
       /hostname "localhost"
-      /port "4503"
+      /port "4502"
     }
   }
 
@@ -22,16 +24,9 @@
   {
     $include "../cache_rules.any"
     $include "../cache_invalidate.any"
-
     $include "../cache_headers.any"
 
-    /docroot "/Users/jhoh/tmp/dispcache/content/geometrixx/com"
-
-
+    /docroot "/opt/cache/content/geometrixx/com"
     /serveStaleOnError "1"
-
   }
-
-
-
 }
